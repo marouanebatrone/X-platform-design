@@ -4,7 +4,7 @@ The passion for developing this project came after solving **[LeetCode 355. Desi
 
 The original problem was about implementing a few core features of a social media platform like X (formerly Twitter):   `postTweet`, `getNewsFeed`, `follow`, `unfollow`  
 
-After finishing those, I still felt motivated to expand it 😀. So I thought about adding more features such as: `suggestUsers`, `likeHandler`, `commentHandler`, `editPost`, `deletePost`, `message` ...
+After finishing those, I still felt motivated to expand it. So I thought about adding more features such as: `suggestUsers`, `likeHandler`, `commentHandler`, `editPost`, `deletePost`, `message` ...
 
 I am not building a production-ready app, linking a NoSQL backend, or exposing a REST API. Instead, this project focuses purely on the logic behind these features, implemented through a `Twitter` class and its methods.  
 
