@@ -62,7 +62,9 @@ class Twitter:
             if followee_id in self.follows:
                 for id in self.follows[followee_id]:
                     if id not in user_follows and id in self.follows:
-                        heapq.heappush(aux_heap, abs(set(self.follows[id]) - set(self.follows[userId]), id))                          
+                        heapq.heappush(aux_heap, abs(set(self.follows[id]) - set(self.follows[userId]), id))
+            if len(aux_heap) > 1000: # added this line to check if we reach more than 1000 to suggest.
+                break                     
         while len(suggest_users) < 20:
             suggest_users.append(heapq.heappop(aux_heap)[1])
         return suggest_users
